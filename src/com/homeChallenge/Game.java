@@ -9,9 +9,7 @@ public class Game {
 
 	public static void main(String[] args) {
 		int[] arr = { 3, 4, 5, 3 };
-		int[] input = playerInput();
-		gamePlaying(arr, input);
-
+		gamePlaying(arr);
 	}
 
 	public static int[] playerInput() {
@@ -66,7 +64,7 @@ public class Game {
 		if (countDiff == 0) {
 			countCorrectGuess = arr2.length - map1.size();
 		} else {
-			System.out.println("countDiff = " + countDiff);
+			//System.out.println("countDiff = " + countDiff);
 			countCorrectGuess = arr2.length - countDiff;
 		}
 		if (countCorrectGuess == 0 || countCorrectLocation == 0) {
@@ -78,13 +76,14 @@ public class Game {
 		return false;
 	}
 
-	public static void gamePlaying(int[] arr1, int[] arr2) {
+	public static void gamePlaying(int[] arr1) {
+		int[] input = new int[arr1.length];
 		int remainingGuess = 3;
 		boolean isGuessCorrect = false;
-		while (remainingGuess >= 0) {
-
-			printPlayerInput(arr2);
-			isGuessCorrect = gameAlgorithm(arr1, arr2);
+		while (remainingGuess > 0) {
+			 input = playerInput();
+			printPlayerInput(input);
+			isGuessCorrect = gameAlgorithm(arr1, input);
 			if (isGuessCorrect) {
 				System.out.println("The player had guess a correct number");
 				break;
