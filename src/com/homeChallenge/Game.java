@@ -50,9 +50,9 @@ public class Game {
 			}
 		}
 		int countDiff = 0;
-		for (int i : arr2) {
-			if (!map1.containsKey(i)) {
-				countDiff++;
+		for (int i : map2.keySet()) {
+			if (map1.containsKey(i)) {
+				countDiff += Math.min(map1.get(i), map2.get(i));
 			}
 //				else {
 //				int diff = map1.get(i) - map2.get(i);
@@ -64,10 +64,10 @@ public class Game {
 		if (countDiff == 0) {
 			countCorrectGuess = arr2.length - map1.size();
 		} else {
-			//System.out.println("countDiff = " + countDiff);
+			// System.out.println("countDiff = " + countDiff);
 			countCorrectGuess = arr2.length - countDiff;
 		}
-		if (countCorrectGuess == 0 || countCorrectLocation == 0) {
+		if (countCorrectGuess == 0 && countCorrectLocation == 0) {
 			System.out.println("all incorrect");
 		} else {
 			System.out.println("game responds " + countCorrectGuess + " correct numbers and " + countCorrectLocation
@@ -81,7 +81,7 @@ public class Game {
 		int remainingGuess = 3;
 		boolean isGuessCorrect = false;
 		while (remainingGuess > 0) {
-			 input = playerInput();
+			input = playerInput();
 			printPlayerInput(input);
 			isGuessCorrect = gameAlgorithm(arr1, input);
 			if (isGuessCorrect) {
@@ -91,6 +91,8 @@ public class Game {
 			remainingGuess--;
 			System.out.println("You have " + remainingGuess + " game(s) left.");
 		}
-		System.out.println("The player’s guess was incorrect");
+		if (!isGuessCorrect) {
+			System.out.println("The player’s guess was incorrect");
+		}
 	}
 }
