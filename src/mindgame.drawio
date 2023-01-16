@@ -1,20 +1,26 @@
-<mxfile host="app.diagrams.net" modified="2023-01-16T09:47:09.885Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="dLiSN-Raacq62RivlrLd" version="20.8.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-16T09:55:20.370Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="bkpasCmJ3X8UaOIaqQko" version="20.8.5" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Sequence Diagram">
-    <mxGraphModel dx="794" dy="476" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1034" dy="476" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="3nuBFxr9cyL0pnOWT2aG-1" value="Front End" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
-          <mxGeometry x="120" y="80" width="100" height="300" as="geometry" />
+          <mxGeometry x="120" y="80" width="100" height="560" as="geometry" />
         </mxCell>
         <mxCell id="3nuBFxr9cyL0pnOWT2aG-2" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="3nuBFxr9cyL0pnOWT2aG-1" vertex="1">
           <mxGeometry x="45" y="70" width="10" height="190" as="geometry" />
         </mxCell>
+        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-18" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="3nuBFxr9cyL0pnOWT2aG-1">
+          <mxGeometry x="45" y="304" width="10" height="190" as="geometry" />
+        </mxCell>
         <mxCell id="3nuBFxr9cyL0pnOWT2aG-5" value="Controller" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
-          <mxGeometry x="298" y="80" width="100" height="300" as="geometry" />
+          <mxGeometry x="298" y="80" width="100" height="560" as="geometry" />
         </mxCell>
         <mxCell id="3nuBFxr9cyL0pnOWT2aG-6" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="3nuBFxr9cyL0pnOWT2aG-5" vertex="1">
           <mxGeometry x="45" y="80" width="10" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-19" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="3nuBFxr9cyL0pnOWT2aG-5">
+          <mxGeometry x="45" y="319" width="10" height="160" as="geometry" />
         </mxCell>
         <mxCell id="3nuBFxr9cyL0pnOWT2aG-7" value="return" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;shadow=0;strokeWidth=1;" parent="1" source="3nuBFxr9cyL0pnOWT2aG-6" target="3nuBFxr9cyL0pnOWT2aG-2" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -26,22 +32,34 @@
             <mxPoint x="275" y="160" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3nuBFxr9cyL0pnOWT2aG-9" value="Get Random Numbers" style="verticalAlign=bottom;endArrow=block;entryX=1;entryY=0;shadow=0;strokeWidth=1;" parent="1" source="3nuBFxr9cyL0pnOWT2aG-6" target="3nuBFxr9cyL0pnOWT2aG-4" edge="1">
+        <mxCell id="3nuBFxr9cyL0pnOWT2aG-9" value="Get Random Numbers" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;" parent="1" source="3nuBFxr9cyL0pnOWT2aG-6" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="240" y="200" as="sourcePoint" />
+            <mxPoint x="750" y="170" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="8tJ0s9JLGVw3jkTy0wQG-2" value="" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="30" y="80" width="20" height="300" as="geometry" />
+          <mxGeometry x="30" y="80" width="20" height="560" as="geometry" />
         </mxCell>
         <mxCell id="8tJ0s9JLGVw3jkTy0wQG-3" value="Back End" style="html=1;" vertex="1" parent="1">
           <mxGeometry x="300" y="20" width="390" height="50" as="geometry" />
         </mxCell>
         <mxCell id="8tJ0s9JLGVw3jkTy0wQG-4" value="Main App" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="425" y="80" width="100" height="300" as="geometry" />
+          <mxGeometry x="425" y="80" width="100" height="560" as="geometry" />
         </mxCell>
         <mxCell id="8tJ0s9JLGVw3jkTy0wQG-7" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="8tJ0s9JLGVw3jkTy0wQG-4">
-          <mxGeometry x="45" y="140" width="10" height="80" as="geometry" />
+          <mxGeometry x="45" y="140" width="10" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-16" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="8tJ0s9JLGVw3jkTy0wQG-4">
+          <mxGeometry x="52.5" y="180" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-17" value="Add Game into&lt;br&gt;list of games" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="8tJ0s9JLGVw3jkTy0wQG-16" parent="8tJ0s9JLGVw3jkTy0wQG-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="57.5" y="160" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="87.5" y="160" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="3nuBFxr9cyL0pnOWT2aG-3" value="Start New Game" style="verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;shadow=0;strokeWidth=1;" parent="1" target="3nuBFxr9cyL0pnOWT2aG-2" edge="1" source="8tJ0s9JLGVw3jkTy0wQG-2">
           <mxGeometry relative="1" as="geometry">
@@ -52,7 +70,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="8tJ0s9JLGVw3jkTy0wQG-6" value="random.org" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="710" y="80" width="100" height="300" as="geometry" />
+          <mxGeometry x="710" y="80" width="100" height="560" as="geometry" />
         </mxCell>
         <mxCell id="3nuBFxr9cyL0pnOWT2aG-4" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="8tJ0s9JLGVw3jkTy0wQG-6" vertex="1">
           <mxGeometry x="45" y="90" width="10" height="30" as="geometry" />
@@ -63,12 +81,12 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="8tJ0s9JLGVw3jkTy0wQG-10" value="Game" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="550" y="80" width="100" height="300" as="geometry" />
+          <mxGeometry x="550" y="80" width="100" height="560" as="geometry" />
         </mxCell>
         <mxCell id="8tJ0s9JLGVw3jkTy0wQG-11" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="8tJ0s9JLGVw3jkTy0wQG-10">
           <mxGeometry x="50" y="150" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-15" value="Generate UUID" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" parent="8tJ0s9JLGVw3jkTy0wQG-10">
+        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-15" value="Generate Game Id" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" parent="8tJ0s9JLGVw3jkTy0wQG-10">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="55" y="160" as="sourcePoint" />
             <Array as="points">
@@ -80,6 +98,68 @@
         <mxCell id="8tJ0s9JLGVw3jkTy0wQG-12" value="Initiate Game Object" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;rounded=0;" edge="1" target="8tJ0s9JLGVw3jkTy0wQG-11" parent="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="480" y="230" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-20" value="return" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;shadow=0;strokeWidth=1;" edge="1" parent="1" source="8tJ0s9JLGVw3jkTy0wQG-19" target="8tJ0s9JLGVw3jkTy0wQG-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="276" y="475" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-21" value="POST&#xa;/games/{game_id}/attempts" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;shadow=0;strokeWidth=1;" edge="1" parent="1" source="8tJ0s9JLGVw3jkTy0wQG-18" target="8tJ0s9JLGVw3jkTy0wQG-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="276" y="399" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-22" value="Get Random Numbers" style="verticalAlign=bottom;endArrow=block;entryX=-0.267;entryY=0.056;shadow=0;strokeWidth=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="8tJ0s9JLGVw3jkTy0wQG-19" target="8tJ0s9JLGVw3jkTy0wQG-27">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="241" y="439" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-23" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="471" y="459" width="10" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-24" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="478.5" y="499" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-25" value="Add Game into&lt;br&gt;list of games" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" parent="1" target="8tJ0s9JLGVw3jkTy0wQG-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="483.5" y="479" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="513.5" y="479" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-26" value="Guess number and&#xa;click check button" style="verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;shadow=0;strokeWidth=1;" edge="1" parent="1" target="8tJ0s9JLGVw3jkTy0wQG-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40.5" y="389" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="141" y="389" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-27" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="756" y="409" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-28" value="Create New Game" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;rounded=0;exitX=0.9;exitY=0.371;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="8tJ0s9JLGVw3jkTy0wQG-19" target="8tJ0s9JLGVw3jkTy0wQG-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="361" y="459" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-29" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="601" y="469" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-30" value="Generate UUID" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="606" y="479" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="636" y="479" />
+            </Array>
+            <mxPoint x="611" y="499" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-31" value="Initiate Game Object" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;rounded=0;" edge="1" parent="1" target="8tJ0s9JLGVw3jkTy0wQG-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="481" y="469" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
       </root>
