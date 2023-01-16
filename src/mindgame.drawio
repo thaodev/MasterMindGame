@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-01-16T10:10:11.193Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="dJ9eg0CHCzW1-Hw1Hyyx" version="20.8.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-16T10:26:19.996Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="wXEOHOOBHfkiXenur3lF" version="20.8.5" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Sequence Diagram">
-    <mxGraphModel dx="1293" dy="595" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1379" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -22,30 +22,17 @@
         <mxCell id="8tJ0s9JLGVw3jkTy0wQG-19" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="3nuBFxr9cyL0pnOWT2aG-5">
           <mxGeometry x="45" y="319" width="10" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-34" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="3nuBFxr9cyL0pnOWT2aG-5">
-          <mxGeometry x="50" y="360" width="10" height="10" as="geometry" />
-        </mxCell>
-        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-35" value="Get Game by game id" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;exitX=1.012;exitY=0.124;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" target="8tJ0s9JLGVw3jkTy0wQG-34" parent="3nuBFxr9cyL0pnOWT2aG-5" source="8tJ0s9JLGVw3jkTy0wQG-19">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="60" y="340" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="55" y="340" />
-              <mxPoint x="90" y="340" />
-              <mxPoint x="90" y="360" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="3nuBFxr9cyL0pnOWT2aG-7" value="return" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;shadow=0;strokeWidth=1;" parent="1" source="3nuBFxr9cyL0pnOWT2aG-6" target="3nuBFxr9cyL0pnOWT2aG-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="275" y="236" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3nuBFxr9cyL0pnOWT2aG-8" value="POST /games" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;shadow=0;strokeWidth=1;" parent="1" source="3nuBFxr9cyL0pnOWT2aG-2" target="3nuBFxr9cyL0pnOWT2aG-6" edge="1">
+        <mxCell id="3nuBFxr9cyL0pnOWT2aG-8" value="POST &#xa;/api/games" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;shadow=0;strokeWidth=1;" parent="1" source="3nuBFxr9cyL0pnOWT2aG-2" target="3nuBFxr9cyL0pnOWT2aG-6" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="275" y="160" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3nuBFxr9cyL0pnOWT2aG-9" value="Get Random Numbers" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;" parent="1" source="3nuBFxr9cyL0pnOWT2aG-6" edge="1">
+        <mxCell id="3nuBFxr9cyL0pnOWT2aG-9" value="Generate target numbers" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;" parent="1" source="3nuBFxr9cyL0pnOWT2aG-6" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="240" y="200" as="sourcePoint" />
             <mxPoint x="750" y="170" as="targetPoint" />
@@ -73,6 +60,22 @@
               <mxPoint x="87.5" y="160" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-40" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="8tJ0s9JLGVw3jkTy0wQG-4">
+          <mxGeometry x="45" y="340" width="10" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-35" value="Get Game by game id" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;exitX=1.012;exitY=0.124;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" target="8tJ0s9JLGVw3jkTy0wQG-34" parent="8tJ0s9JLGVw3jkTy0wQG-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55.620000000000005" y="349.99999999999994" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="55.5" y="351.16" />
+              <mxPoint x="90.5" y="351.16" />
+              <mxPoint x="90.5" y="371.16" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-34" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="8tJ0s9JLGVw3jkTy0wQG-4">
+          <mxGeometry x="50.5" y="370.16" width="10" height="10" as="geometry" />
         </mxCell>
         <mxCell id="3nuBFxr9cyL0pnOWT2aG-3" value="Start New Game" style="verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;shadow=0;strokeWidth=1;" parent="1" target="3nuBFxr9cyL0pnOWT2aG-2" edge="1" source="8tJ0s9JLGVw3jkTy0wQG-2">
           <mxGeometry relative="1" as="geometry">
@@ -118,7 +121,7 @@
             <mxPoint x="276" y="475" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-21" value="POST&#xa;/games/{game_id}/attempts" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;shadow=0;strokeWidth=1;" edge="1" parent="1" source="8tJ0s9JLGVw3jkTy0wQG-18" target="8tJ0s9JLGVw3jkTy0wQG-19">
+        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-21" value="POST&#xa;/api/games/{game_id}/attempts" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;shadow=0;strokeWidth=1;" edge="1" parent="1" source="8tJ0s9JLGVw3jkTy0wQG-18" target="8tJ0s9JLGVw3jkTy0wQG-19">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="276" y="399" as="sourcePoint" />
           </mxGeometry>
@@ -132,16 +135,26 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="8tJ0s9JLGVw3jkTy0wQG-38" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
-          <mxGeometry x="348" y="499" width="10" height="10" as="geometry" />
+          <mxGeometry x="475" y="499" width="10" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-39" value="Calculate attempt result" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;exitX=1.012;exitY=0.124;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" target="8tJ0s9JLGVw3jkTy0wQG-38">
+        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-39" value="Process Comparison&lt;br&gt;and produce result" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;exitX=1.012;exitY=0.124;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" target="8tJ0s9JLGVw3jkTy0wQG-38">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="353.1199999999999" y="477.8399999999999" as="sourcePoint" />
+            <mxPoint x="480.1199999999999" y="477.8399999999999" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="353" y="479" />
-              <mxPoint x="388" y="479" />
-              <mxPoint x="388" y="499" />
+              <mxPoint x="480" y="479" />
+              <mxPoint x="515" y="479" />
+              <mxPoint x="515" y="499" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-42" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;rounded=0;entryX=0.988;entryY=0.726;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" source="8tJ0s9JLGVw3jkTy0wQG-40" parent="1" target="8tJ0s9JLGVw3jkTy0wQG-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="515" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8tJ0s9JLGVw3jkTy0wQG-41" value="Compare guess vs&lt;br&gt;&amp;nbsp;target numbers" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;rounded=0;" edge="1" target="8tJ0s9JLGVw3jkTy0wQG-40" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="420" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
       </root>
